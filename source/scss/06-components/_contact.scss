@@ -4,12 +4,26 @@
   flex-wrap: wrap;
   position: relative;
 
+  // esto sol hace efecto a los elementos dentro de la grilla de la pagina contacto, es decir formulario y titulo
   .container{
     width: 100%;
     position: relative;
     min-height: calc(100vh - 6em);
     display: flex;
     align-items: center;
+
+    @media #{$medium-and-down} {
+      min-height: auto;
+      padding-top: 2em;
+    }
+
+    .row{
+      .col:first-child{
+        @media #{$medium-and-down} {
+          display: none;
+        }
+      }
+    }
   }
   
   //imagen de background
@@ -20,6 +34,10 @@
     bottom: 0;
     left: 0;
     object-fit: cover;
+
+    @media #{$medium-and-down} {
+      display: none;
+    }
   }
 
   //representan el navegador de logo y tabs
@@ -29,12 +47,21 @@
     padding-left: 1.5em;
     height: 6em;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+
+    @media #{$medium-and-down} {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
   }
 
   &__logo{
     background: white;
+
+    
 
     img{
       height: 50%;

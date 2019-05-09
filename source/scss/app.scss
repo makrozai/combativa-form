@@ -1,3 +1,4 @@
+@import "https://file.myfontastic.com/pmm4cGjTtXDGHtGQjyuvnZ/icons.css";
 // =========================
 // 01.- Settings - import of global variables
 // =========================
@@ -6,7 +7,7 @@
 // =========================
 // 03.- Generic -import of font
 // =========================
-@import "03-generic/worksans";
+@import "03-generic/mavenpro";
 
 // =========================
 // 04.- Elements - import of elements
@@ -21,11 +22,12 @@
 // =========================
 // 05.- objects - import of objects
 // =========================
-@import "06-components/contact";
-@import "06-components/tab";
-@import "06-components/title";
-@import "06-components/section-form";
-@import "06-components/form";
+@import "06-components/contact"; // cabecera de la pagina contacto, contiene logo y tab
+@import "06-components/tab"; // tab de formulario
+@import "06-components/title"; // titulo
+@import "06-components/section-form"; // estructura de elementos dentro del formulario
+@import "06-components/form"; // formulario completo(inputs y labels)
+@import "06-components/confirmation"; // modal de confirmacion en el envio
 
 // =========================
 // 07.- Trumps - import of utilities

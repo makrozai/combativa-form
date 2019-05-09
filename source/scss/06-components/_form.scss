@@ -4,9 +4,31 @@
   &__group{
     display: block;
     margin-bottom: 1em;
+    position: relative;
+    transition:all .3s;
+
+    &:hover{
+      color: $g-color-first;
+      font-weight: 700;
+    }
+    input{
+      font-size: .9em;
+      padding: 1.1em 1em;
+
+      // las validaciones funcionan mediantes css con el atributo required
+      &:valid + .alert{
+        opacity: 1;
+      }
+    }
     
     &--checkbox{
       margin-top: 4em;
+
+      &:hover{
+        font-weight: 400;
+      }
+
+      // reemplaza el checkbox nativo por un componente dentro de un span
       input{
         display: none;
         &:checked{
@@ -32,10 +54,43 @@
         }
       }
     }
+
+    // alerta de campo completado
+    .alert{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: calc(3em + 1px);
+      width: calc(3em + 1px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition:all .3s;
+
+      i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: #3cbe48;
+        width: 60%;
+        height: 60%;
+        border-radius:50%;
+
+        &:before{
+          display: block;
+          transform:translateY(2px);
+        }
+      }
+    }
   }
 
+  
   &__button{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     color: white;
     border:none;
@@ -46,6 +101,16 @@
     font-size: 1.2em;
     margin-top: 1em;
     transition:all .3s;
+    cursor: pointer;
+
+    i{
+      display: flex;
+      font-size: 1.3em;
+      margin-left: .5em;
+      &:before{
+        transform:translateY(1px);
+      }
+    } 
 
     &:hover{
       color: $g-color-first;

@@ -1,0 +1,30 @@
+//aqui se importa las fuentes
+/*
+* deben cambiar el nombre "ptsans" por el nombre de su fuente
+* considerar los formatos que se necesitan
+*/
+
+@font-face {
+  font-family: "mavenpro";
+  src: local(mavenpro Regular),
+    url('#{$font-path}mavenpro/mavenpro-regular.ttf')  format('truetype');/* Safari, Android, iOS */
+  font-weight: 400;
+}
+@font-face {
+  font-family: "mavenpro";
+  src: local(mavenpro Medium),
+    url('#{$font-path}mavenpro/mavenpro-medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 500;
+}
+@font-face {
+  font-family: "mavenpro";
+  src: local(mavenpro SemiBold),
+    url('#{$font-path}mavenpro/mavenpro-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+}
+@font-face {
+  font-family: "mavenpro";
+  src: local(mavenpro ExtraBold),
+    url('#{$font-path}mavenpro/mavenpro-black.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 800;
+}

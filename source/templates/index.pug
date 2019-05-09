@@ -4,7 +4,6 @@ html(lang="es")
     meta(charset="UTF-8")
     title Documents
     link(rel="stylesheet", href="dist/css/app.css")
-    link(href="https://file.myfontastic.com/pmm4cGjTtXDGHtGQjyuvnZ/icons.css")
   body
     .c-contact
       img(src="dist/img/banner.png", alt="")
@@ -33,19 +32,32 @@ html(lang="es")
 
               form(action="").c-form
                 label.c-form__group Nombre apellidos:
-                  input(type="text")
+                  input(type="text" required)
+                  .alert
+                    i.icon-checked
                 label.c-form__group Número de DNI:
-                  input(type="number")
+                  input(type="number" required)
+                  .alert
+                    i.icon-checked
                 label.c-form__group Email:
-                  input(type="email")
+                  input(type="email" required)
+                  .alert
+                    i.icon-checked
                 label.c-form__group Celular:
-                  input(type="tel")
+                  input(type="tel" pattern="[0-9]{9}" required)
+                  .alert
+                    i.icon-checked
                 label.c-form__group.c-form__group--checkbox
-                  input(type="checkbox", name="")
+                  input(type="checkbox", name=""  required)
                   span Acepto los términos y condiciones
                 
                 button.c-form__button siguiente
                   i.icon-next
-
-
+    
+    .c-confirmation
+      .c-confirmation__alert
+        p Gracias por participar, estaremos contactandote a la brevedad.
+        .c-confirmation__button Completar
+    
+    script(src="dist/js/main.js")
     
