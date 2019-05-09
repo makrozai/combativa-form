@@ -1,0 +1,43 @@
+.c-contact{
+  background: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  .container{
+    width: 100%;
+    position: relative;
+    min-height: calc(100vh - 6em);
+    display: flex;
+    align-items: center;
+  }
+  
+  //imagen de background
+  > img{
+    position: absolute;
+    width: 50%;
+    height: calc(100% - 6em);
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  //representan el navegador de logo y tabs
+  > div{
+    width: 50%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    height: 6em;
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__logo{
+    background: white;
+
+    img{
+      height: 50%;
+    }
+  }
+}

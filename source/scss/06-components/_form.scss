@@ -1,0 +1,56 @@
+.c-form{
+  color:#a4a4a4;
+
+  &__group{
+    display: block;
+    margin-bottom: 1em;
+    
+    &--checkbox{
+      margin-top: 4em;
+      input{
+        display: none;
+        &:checked{
+          + span:before{
+            box-shadow: 1px 1px 0 1px $g-color-first;
+            width: .6em;
+            transform:rotateZ(35deg) translateY(-5px);
+          }
+        }
+      }
+      span{
+        display: flex;
+        align-items: center;
+        color: #101010;
+        &:before{
+          content: "";
+          display: block;
+          width: 1em;
+          height: 1em;
+          box-shadow: 0 0 0 2px $g-color-first;
+          margin-right: 1em;
+          transition:all .3s;
+        }
+      }
+    }
+  }
+
+  &__button{
+    display: block;
+    width: 100%;
+    color: white;
+    border:none;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: $g-color-first;
+    font-size: 1.2em;
+    margin-top: 1em;
+    transition:all .3s;
+
+    &:hover{
+      color: $g-color-first;
+      background: transparent;
+      box-shadow: 0 0 0 2px $g-color-first inset;
+    }
+  }
+}

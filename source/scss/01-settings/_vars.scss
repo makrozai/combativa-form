@@ -1,23 +1,11 @@
 :root {
-  --g-color-first: #ff1e13;
-  --g-color-first-hover: #1d2258;
-  --g-color-first-pressed: #1d2258;
-  --g-color-second: #bc3e48;
-  --g-color-second-hover: #e43c6a;
-  --g-color-second-pressed: #a1284a; //
-  --g-color-third: #014592;
-  --g-color-third-hover: #014592;
-  --g-color-third-pressed: #014592;
-  --g-color-fourth: #00d2c3;
-  --g-color-fourth-hover: #01b6a9;
-  --g-color-fourth-pressed: #057069; //
+  --g-color-first: #e8537b;
+  --g-color-green: #62b759;
 }
 
 //global colors
-$g-color-first: var(--g-color-first) !default; //dark-slate-blue
-$g-color-second: var(--g-color-second) !default; //warm-pink
-$g-color-third: var(--g-color-third) !default; //darkish-blue
-$g-color-fourth: var(--g-color-fourth) !default; //aquamarine
+$g-color-first: var(--g-color-first) !default; //pink
+$g-color-green: var(--g-color-second) !default; //green
 
 $font-path: "../../source/fonts/" !default;
 

@@ -1,0 +1,41 @@
+.c-tab{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: auto;
+
+  &__bar{
+    order: 1;
+    width: 100%;
+    height: 12px;
+    position: relative;
+    background: white;
+
+    span{
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 33.3333%;
+      height: 100%;
+      background: $g-color-first;
+      transition:all .3s;
+    }
+  }
+
+  li{
+    width: 33.3333%;
+    padding: 1em;
+    text-align: center;
+    color: #7c7c7c;
+    font-weight: 500;
+    cursor: pointer;
+    transition:all .3s;
+
+    &.active{
+      font-weight: 700;
+      color: $g-color-first;
+
+    }
+  }
+}

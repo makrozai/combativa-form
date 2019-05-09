@@ -1,0 +1,24 @@
+.c-section-form{
+  padding-left: 4em;
+  &__title{
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    color: #101010;
+    h3,p{
+      margin: 0;
+    }
+    h3{
+      font-size: 1.5em;
+    }
+    &:after{
+      content: "";
+      display: block;
+      width: 2em;
+      height: 2em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url('../img/www.png');
+    }
+  }
+}

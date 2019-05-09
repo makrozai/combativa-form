@@ -4,6 +4,48 @@ html(lang="es")
     meta(charset="UTF-8")
     title Documents
     link(rel="stylesheet", href="dist/css/app.css")
+    link(href="https://file.myfontastic.com/pmm4cGjTtXDGHtGQjyuvnZ/icons.css")
   body
-    h1 Hello World
+    .c-contact
+      img(src="dist/img/banner.png", alt="")
+      .c-contact__logo
+        img(src="dist/img/logo.svg", alt="")
+      div
+        ul.c-tab
+          .c-tab__bar
+            span
+          li.active Déjanos tus datos
+          li Cuestionario
+          li Finalizar
+          
+
+      section.container
+        .row
+          .col.s100.l50
+            .c-title
+              h2 Creciendo<br> con el mundo y
+                span la gente
+          .col.s100.l50
+            .c-section-form
+              .c-section-form__title
+                h3 Para mayor información
+                p déjanos tus datos aquí:
+
+              form(action="").c-form
+                label.c-form__group Nombre apellidos:
+                  input(type="text")
+                label.c-form__group Número de DNI:
+                  input(type="number")
+                label.c-form__group Email:
+                  input(type="email")
+                label.c-form__group Celular:
+                  input(type="tel")
+                label.c-form__group.c-form__group--checkbox
+                  input(type="checkbox", name="")
+                  span Acepto los términos y condiciones
+                
+                button.c-form__button siguiente
+                  i.icon-next
+
+
     

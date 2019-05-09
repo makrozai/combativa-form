@@ -1,0 +1,15 @@
+.c-title{
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  color: #fff;
+
+  h2{
+    font-size: 4em;
+
+    span{
+      color: $g-color-first;
+      display: block;
+    }
+  }
+}

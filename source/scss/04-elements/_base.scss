@@ -3,17 +3,19 @@
 }
 html{
   font-size: 16px;
-  font-family: century, arial, helvetica, sans-serif;
+  font-family:arial, helvetica, sans-serif;
   color: #363636;
 }
 body{
   margin: 0;
 }
 button,input,select,textarea{
-  font-family: century, arial, helvetica, sans-serif;
+  font-family: arial, helvetica, sans-serif;
 }
 ul{
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a{
@@ -26,6 +28,13 @@ input,textarea{
   padding: .5em 1em;
   margin-bottom: 1em;
   outline: none;
+  border: #f2dee6 1px solid;
+  margin-top: .5em;
+  transition: all .3s;
+
+  &:hover{
+    box-shadow: 0 0 10px 4px rgba(#b4366a,.2);
+  }
 }
 button{
   outline: none;
