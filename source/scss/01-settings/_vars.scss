@@ -1,10 +1,12 @@
 :root {
   --g-color-first: #b4366a;
+  --g-color-first-darken : #80244a; 
   --g-color-green: #62b759;
 }
 
 //global colors
 $g-color-first: var(--g-color-first) !default; //pink
+$g-color-first-darken: var(--g-color-first-darken) !default; //pink-darken
 $g-color-green: var(--g-color-second) !default; //green
 
 $font-path: "../../source/fonts/" !default;
